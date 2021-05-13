@@ -1,0 +1,69 @@
+nav {
+    margin: 20px;
+    height: 100px;
+    z-index: 10;
+    background-color: white;
+}
+
+nav img {
+    width: auto;
+    height: 100px;
+}
+
+.nav-link, nav a {
+    font-size: 30px;
+    line-height: 90px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    transform: translateY(-10%);
+}
+
+.icons a {
+    font-size: 25px;
+    margin: 0px 5px;
+    color: black;
+}
+
+.fa-heart {
+    color: red;
+}
+
+#profile {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 50px;
+    color: rgb(128, 146, 199);
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        margin: 3px 10px;
+        height: 70px;
+    }
+
+    nav img {
+        width: auto;
+        height: 70px;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    #profile {
+        height: 400px;
+    }
+
+}
