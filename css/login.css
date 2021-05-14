@@ -1,0 +1,25 @@
+.login {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 60px;
+    color: powderblue;
+    margin: 20px auto;
+}
+
+.login label {
+    font-size: 30px;
+}
+
+.login #ID {
+    transform: translateX(4%);
+}
+
+.login #submit {
+    margin-top: 10px;
+    background-color: powderblue;
+    border-radius: 5px;
+    border: solid 1px powderblue;
+}
