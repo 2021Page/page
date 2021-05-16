@@ -3,7 +3,7 @@
 }
 
 nav {
-    margin: 20px;
+    margin: 60px;
     height: 100px;
     z-index: 10;
     background-color: white;
@@ -46,7 +46,7 @@ nav img {
         width: auto;
         height: 70px;
     }
-    
+
     .nav-link, nav a {
         font-size: 20px;
         line-height: 45px;
