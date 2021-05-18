@@ -4,4 +4,3 @@ Hello 2222
 testtest
 
 pull
-push
