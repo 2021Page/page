@@ -3,7 +3,6 @@
 }
 
 nav {
-    margin: 60px;
     height: 100px;
     z-index: 10;
     background-color: white;
@@ -12,6 +11,8 @@ nav {
 nav img {
     width: auto;
     height: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 .nav-link, nav a {
@@ -21,6 +22,7 @@ nav img {
 
 .icons {
     position: absolute;
+    top: 3%;
     right: 5%;
     transform: translateY(-10%);
 }
