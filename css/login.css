@@ -4,7 +4,7 @@
 }
 
 .login h2 {
-    font-size: 60px;
+    font-size: 40px;
     color: powderblue;
     margin: 20px auto;
 }
@@ -20,6 +20,6 @@
 .login #submit {
     margin-top: 10px;
     background-color: powderblue;
-    border-radius: 5px;
+    border-radius: 10px;
     border: solid 1px powderblue;
 }
