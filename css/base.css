@@ -60,3 +60,26 @@ nav img {
     }
 
 }
+#top{
+  font: bold 15pt Georgia;
+  background-color:#d5c5fb;
+  border : 3px solid white;
+  width:100px;
+  height:30px;
+  position:fixed;
+  text-align: center;
+  bottom: 70px;
+  right: 50px;
+  position:fixed;
+}
+#bottom{
+  font: bold 15pt Georgia;
+  background-color:#d5c5fb;
+  border : 3px solid white;
+  width:100px;
+  height:30px;
+  position:fixed;
+  text-align: center;
+  bottom: 40px;
+  right: 50px;
+}
