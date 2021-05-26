@@ -4,8 +4,10 @@
   margin-right:100px;
 }
 .a{
+  font-weight: bold;
   text-decoration: none;
   color:black;
+  text-shadow: 1px 1px 2px rgb(128, 146, 199);
 }
 .a:hover{
     color:black;
