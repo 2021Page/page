@@ -53,7 +53,7 @@
                     <li><a class="dropdown-item" href="login.html">Login</a></li>
                     <li><a class="dropdown-item" href="join.html">Join</a></li>
                     <li><a class="dropdown-item" href="cart.html">Cart</a></li>
-                    <li><a class="dropdown-item" href="#">My Page</a></li>
+                    <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
                 </ul>
             </span>
         </div>
@@ -77,31 +77,91 @@
         </ul>
     </nav>
 
-
-    <!-- 여기서부터 코드 작성 -->
 <h1 style="padding:17px; background-color:#EBF5FF" id = "head">My Page</h1>
 
-<div class="container-fluid text-center">
-  <h3>SERVICES</h3>
-  <p>What we offer</p>
-  <div class="row" style="margin:150px;">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off servicelogo"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+<!--Member box-->
+<div style="border-style:dashed; margin:60px 70px 0px 70px;">
+<div class="container-fluid">
+  <div class="row" style="margin:50px 120px 50px 120px;">
+    <div class="col-sm-3">
+      <span><img src="img/mypagelogo.png" alt=""></span>
+    </div>
+    <div class="col-sm-5 ">
+      <p id="welcome">Welcome to Luminous!</p>
+      <button class="btn btn-outline-info btn-lg" onclick="location.href='#.html'"
+      id="movelike">Move to LIKE</button>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart servicelogo"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock servicelogo"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4 id="point">My Point | <br> My Coupon |</h4>
     </div>
   </div>
 </div>
+</div>
+
+<!--Order List-->
+<p style="text-align:center; margin-top:45px; font-size:25pt;">Order List</p>
+<div style="border-style:dashed; margin:15px 70px 50px 70px;">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Date of order</th>
+        <th scope="col">Product Information</th>
+        <th scope="col">Product Amount</th>
+        <th scope="col">Order Processing Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Default</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-primary">
+        <th scope="row">Primary</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-secondary">
+        <th scope="row">Secondary</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-success">
+        <th scope="row">Success</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-danger">
+        <th scope="row">Danger</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row">Warning</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-info">
+        <th scope="row">Info</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+      <tr class="table-light">
+        <th scope="row">Light</th>
+        <td>Column content</td>
+        <td>Column content</td>
+        <td>Column content</td>
+      </tr>
+    </tbody>
+  </table>
+
     <!-- 여기까지 -->
 </body>
 
