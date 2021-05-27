@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminous</title>
+    <title>MyPage</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,39 +17,49 @@
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/howto.css">
     <link rel="stylesheet" href="css/base.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
-
-        <title>Howto</title>
-
 </head>
 
 <body>
     <nav>
         <div class="icons">
-            <a href="#"><i class="fas fa-search"></i></a>
+            <span class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-search"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li class="dropdown-item">
+                         <form>
+                            <input type="text">
+                            <input type="submit" value="Go">
+                        </form>
+                    </li>
+                </ul>
+            </span>
+
             <a href="#"><i class="fas fa-heart"></i></a>
             <span class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fas fa-user"></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="login.html">Login</a></li>
                     <li><a class="dropdown-item" href="join.html">Join</a></li>
-                    <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">My Page</a></li>
                 </ul>
             </span>
         </div>
         <ul class="nav">
             <a href="main.html"><img src="img/logo3_투명.png"></a>
             <li class="nav-item">
-                <a class="nav-link" style="color: rgb(255, 102, 102);" href="howto.html">How to</a>
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="howto.html">How to</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: rgb(128, 146, 199);" href="shop.html">Shop</a>
@@ -66,24 +76,10 @@
         </ul>
     </nav>
 
-    <div>
- <h1 style="padding:17px; background-color:#EBF5FF" id = "head">How to </h1><br><br>
-<div class="container-fluid bg-4 text-center">
 
-      <div id = "content" class="row">
-         <div class="col-sm-6">
-          <p id="howto1"><b> To attach nail tips </b><br>
-           <video src = "how to/부착.mp4" preload="auto" controls width ="600" height="500" type="video/mp4" poster = "img/howto.png"></video></div>
-          <div class="col-sm-6">
-          <div id="howto2"> <b>To remove nail tips </b><br>
-           <video src = "how to/제거.mp4" preload="auto" controls width ="600" height="500" type="video/mp4" poster = "img/howto.png"></video></div>
-         </div>
-       </div>
-   </div>
-
-   <!--fixed top-bottom-->
-   <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
-   <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="">Bottom</a></div>
+    <!-- 여기서부터 코드 작성 -->
+<h1 style="padding:17px; background-color:#EBF5FF" id = "head">My Page</h1>
+    <!-- 여기까지 -->
 </body>
 
 </html>
