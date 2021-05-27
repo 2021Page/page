@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="icons">
+            <span class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-search"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li class="dropdown-item">
+                         <form>
+                            <input type="text">
+                            <input type="submit" value="Go">
+                        </form>
+                    </li>
+                </ul>
+            </span>
+
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <span class="dropdown">
+                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="join.html">Join</a></li>
+                    <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                    <li><a class="dropdown-item" href="mypage.html">My Page</a></li>
+                </ul>
+            </span>
+        </div>
+        <ul class="nav">
+            <a href="main.html"><img src="img/logo3_투명.png"></a>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="howto.html">How to</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="event.html">Event</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(128, 146, 199);" href="location.html">Location</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<h1 style="padding:17px; background-color:#EBF5FF" id = "head">Location</h1>
+<div id="map" style="margin:100px;width:500px; height: 500px"></div>
+
+<script>
+function myMap() {
+var mapCanvas = document.getElementById("map");
+var myCenter = new google.maps.LatLng(36.62632111356488, 127.45459030173232);
+var infowindow = new google.maps.InfoWindow({
+content: "LUMINOUS"});
+infowindow.open(map,marker);
+var mapOptions = {
+  center: myCenter,
+  zoom: 15
+};
+var map = new google.maps.Map(mapCanvas, mapOptions);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+animation:google.maps.Animation.BOUNCE,
+icon: 'img/1star.png'
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+    content: "LUMINOUS"
+  });
+  infowindow.open(map,marker);
+
+var myUniversity = new google.maps.Circle({
+  center: myCenter,
+  radius: 100,
+  strokeColor: "RED",
+  strokeOpacity: 0.5,
+  strokeWeight: 3,
+  fillColor: "RED",
+  fillOpacity: 0.3
+});
+myUniversity.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlOjojzJqN5CEy7iGWtTTiWgCMiPUhXI&callback=myMap"></script>
+</body>
+
+</html>
