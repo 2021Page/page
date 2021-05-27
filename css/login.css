@@ -4,13 +4,13 @@
 }
 
 .login h2 {
-    font-size: 40px;
+    font-size: 20px;
     color: powderblue;
     margin: 20px auto;
 }
 
 .login label {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .login #ID {
@@ -19,7 +19,27 @@
 
 .login #submit {
     margin-top: 10px;
-    background-color: powderblue;
-    border-radius: 10px;
+    width:210px;
+    height:30px;
+    background-color: #EBF5FF;
+    border-radius: 5px;
     border: solid 1px powderblue;
+    position:relative;
+    text-align:center;
+
+}
+  /* 이거 join center로 넣어야함 textalign 이 안됨 */
+#join{
+  display:block;
+  color:black;
+  text-align:center;
+  text-decoration:none;
+  margin-top: 10px;
+  width:210px;
+  height:30px;
+  background-color: #EBF5FF;
+  border-radius: 5px;
+  border: solid 1px powderblue;
+  position:relative;
+
 }
