@@ -10,7 +10,7 @@
 }
 
 .join label {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .join #ID {
@@ -18,8 +18,12 @@
 }
 
 .join #submit {
-    margin-top: 10px;
-    background-color: powderblue;
-    border-radius: 5px;
-    border: solid 1px powderblue;
+  margin-top: 10px;
+  width:210px;
+  height:30px;
+  background-color: #EBF5FF;
+  border-radius: 5px;
+  border: solid 1px powderblue;
+  position:relative;
+  text-align:center;
 }

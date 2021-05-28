@@ -1,3 +1,4 @@
+
 #profile {
     height: 800px;
     overflow: hidden;
@@ -7,7 +8,7 @@
 .title {
     margin-left: 30px;
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(128, 146, 199);
 }
 
@@ -17,3 +18,9 @@
     }
 
 }
+#footer{
+   background-color:rgb(128, 146, 199);
+   font-size:30px;
+   padding:40px;
+   text-align:center;
+ }
