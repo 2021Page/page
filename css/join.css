@@ -1,6 +1,5 @@
 .join {
     margin: 40px 0px;
-    text-align: center;
 }
 
 .join h2 {
@@ -13,10 +12,6 @@
     font-size: 25px;
 }
 
-.join #ID {
-    transform: translateX(4%);
-}
-
 .join #submit {
   margin-top: 10px;
   width:210px;
@@ -26,4 +21,12 @@
   border: solid 1px powderblue;
   position:relative;
   text-align:center;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+#privacy {
+    text-align: center;
 }
