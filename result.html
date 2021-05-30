@@ -1,0 +1,36 @@
+{% extends 'page/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    {% load static %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static 'page/css/result.css' %}">
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+
+    <section class="container-fluid">
+        <h3 class="title">Results of ' {{ searchstr }} '</h3>
+        {% if products %}
+        <div class="container">
+            {% for product in products %}
+                <img src="{{ product.image.url }}">
+                <br>
+                <p>{{ product.title }}<br>{{ product.price }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+
+    {% endblock content %}
+</body>
+
+</html>

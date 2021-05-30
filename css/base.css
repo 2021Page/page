@@ -16,7 +16,7 @@ nav img {
     padding-right: 10px;
 }
 
-.nav-link, nav a {
+.nav-link {
     font-size: 30px;
     line-height: 90px;
     font-family: 'Playball', cursive;
@@ -26,7 +26,7 @@ nav img {
     position: absolute;
     top: 3%;
     right: 5%;
-    transform: translateY(-10%);
+    transform: translateY(40%);
 }
 
 .icons a {
@@ -54,10 +54,13 @@ nav img {
         height: 70px;
     }
 
-    .nav-link, nav a {
+    .nav-link {
         font-size: 20px;
         line-height: 45px;
+    }
 
+    .icons {
+        transform: translateY(0%);
     }
 
 }
