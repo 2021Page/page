@@ -1,8 +1,17 @@
 
-#profile {
-    overflow: hidden;
-    z-index: 1;
+#main {
+    position: relative;
+    height: 600px;
+    overflow: hidden !important;
+    z-index: -1;
 }
+
+#main img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
 
 .title {
     margin-left: 90px;
@@ -12,7 +21,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    #profile {
+    #main {
         height: 400px;
     }
 
