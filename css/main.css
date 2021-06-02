@@ -1,7 +1,7 @@
 
 #main {
     position: relative;
-    height: 600px;
+    height: 800px;
     overflow: hidden !important;
     z-index: -1;
 }
