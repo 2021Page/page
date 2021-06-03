@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPage</title>
+    <title>Luminous</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,15 +18,20 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/mypage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
-        <style media="screen">
 
-        </style>
+      <style>
+        #footer{
+           background-color:rgb(128, 146, 199);
+           font-size:30px;
+           padding:40px;
+           text-align:center;
+         }
+         </style>
 </head>
 
 <body>
@@ -66,7 +71,7 @@
                 <a class="nav-link" style="color: rgb(128, 146, 199);" href="howto.html">How to</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: rgb(128, 146, 199);" href="shop.html">Shop</a>
+                <a class="nav-link" style="color: rgb(255, 102, 102);" href="shop.html">Shop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: rgb(128, 146, 199);" href="event.html">Event</a>
@@ -80,77 +85,31 @@
         </ul>
     </nav>
 
-<h1 style="padding:17px; background-color:#EBF5FF" id = "head">My Page</h1>
 
-<!--Member box-->
-<div style="border-style:dashed; margin:60px 70px 0px 70px;">
-<div class="container-fluid">
-  <div class="row" style="margin:50px 120px 50px 120px;">
-    <div class="col-sm-3">
-      <img style="width:100%; height:auto;"src="img/mypagelogo.png">
-    </div>
-    <div class="col-sm-5 ">
-      <p id="welcome">Welcome to Luminous!</p>
-      <button class="btn btn-outline-info btn-lg" onclick="location.href='like.html'"
-      id="movelike">Move to LIKE</button>
-    </div>
-    <div class="col-sm-4">
-      <h4 id="point">My Point | 100  <br> My Coupon | 2 </h4>
-    </div>
-  </div>
-</div>
+    <!-- 여기서부터 코드 작성 -->
+<h1 style="padding:17px; background-color:#EBF5FF" id = "head">Shop_Care</h1><br>
+
+
+<div class="container text-center">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                  <img src="img/lamp.jpg" style="overflow: hidden;" width="70%" height="auto">
+                <p style="font-size:20px; text-align:center">Gel Lamp<br>$20</p>
+                </div>
+                <div class="col-sm-3">
+                </div>
+           </div><br><br>
 </div>
 
-<!--Order List-->
-<p style="text-align:center; margin-top:45px; font-size:25pt;">Order List</p>
-<div style="border-style:dashed; margin:15px 70px 50px 70px;">
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">Date of order</th>
-        <th scope="col">Product Information</th>
-        <th scope="col">Product Amount</th>
-        <th scope="col">Order Processing Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="table-light">
-        <th scope="row">2021.05.15</th>
-        <td>Frost White</td>
-        <td>$8</td>
-        <td>Delivery completed</td>
-      </tr>
-      <tr class="table-danger">
-        <th scope="row">2021.04.19</th>
-        <td>My Daisy</td>
-        <td>$10</td>
-        <td>Delivery completed</td>
-      </tr>
-      <tr class="table-light">
-        <th scope="row">2021.02.26</th>
-        <td>Mint Latte</td>
-        <td>$8</td>
-        <td>Delivery completed</td>
-      </tr>
-      <tr class="table-warning">
-        <th scope="row">2021.02.01</th>
-        <td>Rose Pop</td>
-        <td>$12</td>
-        <td>Delivery completed</td>
-      </tr>
-      <tr class="table-light">
-        <th scope="row">2020.12.03</th>
-        <td>Sweet Orchild</td>
-        <td>$11</td>
-        <td>Delivery completed</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
+  <!--footer-->
+  <div id ="footer"> LUMINOUS </div>
+  <!--top bottom 버튼-->
   <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
-  <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="#footer">Bottom</a></div>
+  <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="">Bottom</a></div>
     <!-- 여기까지 -->
-    <div id="footer"> LUMINOUS </div>
 </body>
 
 </html>

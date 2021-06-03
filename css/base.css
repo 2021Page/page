@@ -87,3 +87,10 @@ nav img {
   bottom: 40px;
   right: 50px;
 }
+#footer{
+  margin-bottom:0px;
+   background-color:rgb(128, 146, 199);
+   font-size:30px;
+   padding:40px;
+   text-align:center;
+ }
