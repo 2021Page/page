@@ -27,6 +27,25 @@
         crossorigin="anonymous"></script>
 
 <title>Event</title>
+<style media="screen">
+#button{
+
+  margin:0px 60px 30px;
+  text-align: right;
+}
+#buy{
+  background-color:white;
+  color:black;
+  padding: 5px;
+  border:3px solid pink;
+  width:200px;
+  height:40px;
+  font-size:12pt;
+}
+table,td{
+  line-height: 40px;
+}
+</style>
 </head>
 
 <body>
@@ -80,11 +99,82 @@
         </ul>
     </nav>
 
-     <div>
-<h1 style="padding:17px; background-color:#EBF5FF" id = "head">Cart </h1>
+<h1 style="padding:17px; background-color:#EBF5FF" id ="head">Cart </h1>
+<div style="text-align: center; margin: 50px 60px 50px 60px;">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Product</th>
+        <th scope="col">Product Amount</th>
+        <th scope="col">Oty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table">
+        <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
+        <td>Frost White</td>
+        <td>$8</td>
+        <td>1</td>
+      </tr>
+      <tr class="table-danger">
+        <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
+        <td>My Daisy</td>
+        <td>$10</td>
+        <td>1</td>
+      </tr>
+      <tr class="table">
+        <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
+        <td>Mint Latte</td>
+        <td>$8</td>
+        <td>1</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
+        <td>Rose Pop</td>
+        <td>$12</td>
+        <td>1</td>
+      </tr>
+      <tr class="table">
+        <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
+        <td>Sweet Orchild</td>
+        <td>$11</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
 
+<div style="text-align: center; margin: 80px 60px 30px 60px;">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Merchandise</th>
+        <th scope="col">Shipping fee</th>
+        <th scope="col">Total Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table">
+        <th scope="row">$35</th> <!-- 구매하려는 상품 총합 가격-->
+        <td>$3</td> <!--배송비-->
+        <td>$38</td><!--상품가격 + 배송비 = 결제가격 -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div id="button">
+     <button id="buy">BUY NOW</button>
+   </div>
+  <!--top bottom-->
   <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
   <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="">Bottom</a></div>
+
+  <!--footer-->
+  <div id="footer"> LUMINOUS </div>
+
 </body>
 
 </html>
