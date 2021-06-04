@@ -3,3 +3,13 @@
   background-color: #EBF5FF;
   width:100%;
 }
+
+#send{
+  background-color: white;
+  color:black;
+  margin-bottom:30px;
+  height:30px;
+  width:100px;
+  border-radius:30px;
+  outline: none;
+}

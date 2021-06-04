@@ -29,21 +29,26 @@
 <title>Event</title>
 <style media="screen">
 #button{
-
   margin:0px 60px 30px;
   text-align: right;
 }
 #buy{
   background-color:white;
-  color:black;
   padding: 5px;
   border:3px solid pink;
   width:200px;
-  height:40px;
-  font-size:12pt;
+  height:35px;
+  font-size:11pt;
 }
 table,td{
-  line-height: 40px;
+  line-height: 35px;
+}
+.delete{
+    background-color:white;
+    width:80px;
+    height:30px;
+    font-size:10pt;
+    line-height: 30px;
 }
 </style>
 </head>
@@ -108,6 +113,7 @@ table,td{
         <th scope="col">Product</th>
         <th scope="col">Product Amount</th>
         <th scope="col">Oty</th>
+        <th scope="col">Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -116,30 +122,35 @@ table,td{
         <td>Frost White</td>
         <td>$8</td>
         <td>1</td>
+        <td> <button class="delete">Delete</button></td>
       </tr>
       <tr class="table-danger">
         <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
         <td>My Daisy</td>
         <td>$10</td>
         <td>1</td>
+        <td> <button class="delete">Delete</button></td>
       </tr>
       <tr class="table">
         <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
         <td>Mint Latte</td>
         <td>$8</td>
         <td>1</td>
+        <td><button class="delete">Delete</button></td>
       </tr>
       <tr class="table-warning">
         <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
         <td>Rose Pop</td>
         <td>$12</td>
         <td>1</td>
+        <td><button class="delete">Delete</button></td>
       </tr>
       <tr class="table">
         <th scope="row"><img src="img/nail/nail1.png" width="40" height="40" alt = "nail"></th>
         <td>Sweet Orchild</td>
         <td>$11</td>
         <td>1</td>
+        <td><button class="delete">Delete</button></td>
       </tr>
     </tbody>
   </table>
