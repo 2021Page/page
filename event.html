@@ -26,30 +26,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
-
+    <script src="js/chart.js"></script>
 
 <title>Event</title>
-
-<script language = "JavaScript">
-   google.charts.load('current', {packages: ['corechart']});
-   function drawChart() {
-   // Define the chart to be drawn.
-    var data = google.visualization.arrayToDataTable([
-      ['Event Name', 'Participation Rate'],
-      ['New Member Event',  80,],
-      ['Ruminous SNS Event',  45],
-      ['Ruminous Kakao Channel Addition Event',  30]
-
-   ]);
-
-   var options = {title: 'Percentage of participation in events to members ( 100% )'};
-
-   // Instantiate and draw the chart.
-   var chart = new google.visualization.BarChart(document.getElementById('container'));
-   chart.draw(data, options);
-}
-google.charts.setOnLoadCallback(drawChart);
-         </script>
 
 </head>
 
@@ -134,9 +113,9 @@ google.charts.setOnLoadCallback(drawChart);
 </div>
 <div id= "event3"><br><hr>
     <br><br>
-    <p id = "container" style = "width: 850px; height: 400px; color:red; margin: 0 auto">
-
+  <div id = "chart_div" style = "width: 1000px; height: 400px; margin: 0 auto">
 </div>
+
   <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
   <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="">Bottom</a></div>
 </body>
