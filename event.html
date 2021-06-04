@@ -20,13 +20,37 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/event.css">
     <link rel="stylesheet" href="css/base.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
 
+
 <title>Event</title>
+
+<script language = "JavaScript">
+   google.charts.load('current', {packages: ['corechart']});
+   function drawChart() {
+   // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+      ['Event Name', 'Participation Rate'],
+      ['New Member Event',  80,],
+      ['Ruminous SNS Event',  45],
+      ['Ruminous Kakao Channel Addition Event',  30]
+
+   ]);
+
+   var options = {title: 'Percentage of participation in events to members ( 100% )'};
+
+   // Instantiate and draw the chart.
+   var chart = new google.visualization.BarChart(document.getElementById('container'));
+   chart.draw(data, options);
+}
+google.charts.setOnLoadCallback(drawChart);
+         </script>
+
 </head>
 
 <body>
@@ -108,7 +132,11 @@
             <br> *If you add Kakao Channel during June, you will receive Starbucks Americano coupons for 30 people through a lottery.
             <br> *Validity: Within 30 days of download <br>*This event may be terminated or changed without notice, depending on the limited number of coupons and our circumstances. </p>
 </div>
-  </div>
+<div id= "event3"><br><hr>
+    <br><br>
+    <p id = "container" style = "width: 850px; height: 400px; color:red; margin: 0 auto">
+
+</div>
   <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
   <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="">Bottom</a></div>
 </body>

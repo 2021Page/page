@@ -21,3 +21,8 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+#container{
+  clear:both;
+  text-align:center;
+  margin-left:100px;
+}

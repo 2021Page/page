@@ -117,6 +117,23 @@ var myUniversity = new google.maps.Circle({
 });
 myUniversity.setMap(map);
 }
+
+function func(){
+var name= document.getElementById("name").value;
+var email= document.getElementById("email").value;
+var comments = document.getElementById("comments").value;
+
+if(confirm("Name : "+name+"+\nEmail : "+email+ "\nComments : "+comments+ "\n\nIs the name and the contents written correct?")==true){
+alert("submit complete!");
+location.reload();
+}
+  else{
+    return;
+  }
+
+}
+
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlOjojzJqN5CEy7iGWtTTiWgCMiPUhXI&callback=myMap"></script>
@@ -146,7 +163,7 @@ Enter the passageway directly connected to Samseong Station Exit 5 and 6 towards
         <p>LUMINOUS</p>
         <p> 524, Bongeunsa-ro, Samsung 1-dong, Gangnam-gu, Seoul</p>
         <p>02-426-5839</p>
-        <p>luminous@rumimail.com</p>
+        <p>luminous@lumimail.com</p>
       </div>
       <div class="col-sm-7">
         <div class="row">
@@ -160,7 +177,7 @@ Enter the passageway directly connected to Samseong Station Exit 5 and 6 towards
         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button onclick="alert('submit complete')" type="submit">Send</button>
+            <button type = "button" onclick = "func()">Send</button>
           </div>
         </div>
       </div>
