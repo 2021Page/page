@@ -7,3 +7,22 @@ border: solid 1px powderblue;
 position:relative;
 text-align:center;
 }
+#Cart{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.detail{
+  width:210px;
+  height:30px;
+  background-color: #EBF5FF;
+  border-radius: 5px;
+  border: solid 1px powderblue;
+  position:relative;
+  text-align:center;
+}
+  #footer{
+     background-color:rgb(128, 146, 199);
+     font-size:30px;
+     padding:40px;
+     text-align:center;
+   }
