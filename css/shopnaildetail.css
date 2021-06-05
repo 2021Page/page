@@ -26,3 +26,11 @@ text-align:center;
      padding:40px;
      text-align:center;
    }
+.detailimg{
+  overflow: hidden;
+   border: 5px solid lightgray;
+    text-align:center;
+    margin:50px;width:350px;
+     height:350px;
+     height:auto;
+}
