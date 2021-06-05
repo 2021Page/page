@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/shopnaildetail.css">
     <script src="js/shop.js"></script>
+    <script src="js/shoppedidetail.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -98,9 +99,22 @@
                 </div>
             </div>
           </div>
-          <div>
+          <div id=calc><p style="font-size:20px"> <br>Price Calculator (Item Price * Quantity + Shipping)</p>
+                    <div>
+                          <label>price:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                          <input type="text" id="price"><br>
+                          <label>Quantity: </label>
+                          <input type="text" id="Quantity"><br>
 
-          </div><br>
+                          Default shipping cost : $3<br><br>
+
+                          <input type="button" id="calculate" value="calculate" onClick="calculate()"><br><br>
+
+                      </div>
+                    <imput type="text" name="price">
+
+
+                    </div><br>
 <div id ="footer"> LUMINOUS </div>
 <div id="top"><a style="text-decoration:none; color:#17063D;" href="">UP</a></div>
 <div id="bottom"><a style="text-decoration:none; color:#17063D;" href="#footer">Bottom</a></div>
