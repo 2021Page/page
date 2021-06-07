@@ -25,6 +25,8 @@
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
     <script src="js/join.js"></script>
+
+    
 </head>
 
 <body>
@@ -78,6 +80,8 @@
         </ul>
     </nav>
 <h1 style="padding:17px; background-color:#EBF5FF" id = "head">Join</h1><br>
+
+
     <section class="container join">
         <form method="POST">
             <div class="form-group">
@@ -91,6 +95,7 @@
             <div class="form-group">
                 <label>PW Confirm</label>
                 <input type="password" class="form-control" name="password2" placeholder="Please enter at least 8 characters." id="c">
+                <input type="button" id="confirm" value="Confirm" onClick="confirm()">
             </div>
             <div class="form-group">
                 <label>NAME</label>
@@ -105,6 +110,7 @@
                 <input type="text" class="form-control" name="address" id="f">
             </div>
 <hr>
+
             <div id="privacy"><b>[Personal Information Collection and Usage Agreement]</b><br><br>
               1. Purpose: Collection of personal information for use of the site<br>
               2. Items: ID, password, name, email, mobile phone number<br>

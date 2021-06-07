@@ -13,3 +13,14 @@ function joinalert(){
     alert("Please fill in all the blanks.");
 }
 }
+
+
+function confirm(){
+   var pw = document.getElementById("b").value;
+   var pwcon = document.getElementById("c").value;
+
+   if(pw.length<8||pwcon.length<8){
+     alert("Password is 8 characters or less. Would you still like to proceed?");
+   }
+
+}
